@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style et ongles</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c14c2df93d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="menu">   
+        <a class="menu__logo" href="./Pageaccueil.html">
+            <img class="menu__logo" src="./Images/Capture d’écran 2023-07-08 à 11.41.45.png" alt="Logo company">
+        </a>  
+    <nav class="menu__nav">
+        <a href="" class="nav__element nav__présentation" >Qui suis-je ?</a>
+        <a href="" class="nav__element nav__préstations">Mes prestations</a>
+        <a href="" class="nav__element nav__rendez-vous">Prendre rendez-vous</a>
+        <a href="" class="nav__element nav__portefolio">Mon portefolio</a>
+        <a href="./Pages/Contact.html" class="nav__element nav__contact">Contactez-moi</a>
+    </nav>
+    <div class="navbar-toggle">
+        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+    </div>
+    <ul class="nav__cachée">
+        <li><a href="" class="nav__cachée__element nav__cachée__présentation" >Qui suis-je ?</a></li>
+        <li><a href="" class="nav__cachée__element nav__cachée__préstations">Mes prestations</a></li>
+        <li><a href="" class="nav__cachée__element nav__cachée__rendez-vous">Prendre rendez-vous</a></li>
+        <li><a href="" class="nav__cachée__element nav__cachée__portefolio">Mon portefolio</a></li>
+        <li><a href="./Pages/Contact.html" class="nav__cachée__element nav__cachée__contact">Contactez-moi</a></li>
+    </ul>
+    </header>
+    <script>
+        const navbartoggle = document.querySelector('.navbar-toggle')
+        const navbartoggleIcon = document.querySelector('.navbar-toggle i')
+        const navcachée = document.querySelector('.nav__cachée')
+
+        navbartoggle.onclick = function () {
+            navcachée.classList.toggle('open')
+        }
+    </script>
+
+    <main class="articles">
+        <section class="articles__présentation">
+            <div class="articles__body">
+                <img class="photoowner" src="./Images/depositphotos_420400562-stock-photo-pretty-young-woman-laughing-shyly.jpg" alt="Photo owner">
+                <h1 class="présentation__titre">Je me présente...</h1>
+                <h2 class="présentation__soustitre">Moi, c'est Eliane Osanno, 30 ans de coiffure au bout de mes doigts.</h2>
+                <p class="présentation__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe dignissimos error
+                nesciunt! Architecto, sit! Officiis unde, ipsa quo quaerat optio nemo perspiciatis 
+                accusamus natus corrupti iure dignissimos obcaecati qui.</p>
+                <a href="./Pages/Contact.html" class="articles__plus plusinfo">Pour en savoir plus</a>
+            </div>
+        </section>
+        <section class="articles__présentation">
+            <div class="articles__body">
+                <img class="photoowner" src="./Images/depositphotos_420400562-stock-photo-pretty-young-woman-laughing-shyly.jpg" alt="Photo owner">
+                <h1 class="présentation__titre">Je me présente...</h1>
+                <h2 class="présentation__soustitre">Moi, c'est Eliane Osanno, 30 ans de coiffure au bout de mes doigts.</h2>
+                <p class="présentation__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe dignissimos error
+                nesciunt! Architecto, sit! Officiis unde, ipsa quo quaerat optio nemo perspiciatis 
+                accusamus natus corrupti iure dignissimos obcaecati qui.</p>
+                <a href="./Pages/Contact.html" class="articles__plus plusinfo">Pour en savoir plus</a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="basdepage">
+            <li>
+                <a href="">Mentions légales</a>
+            </li>
+            <li>
+                <a href="./Pages/Contact.html">Contact</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style et ongles</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c14c2df93d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="menu">
+    <a class="menu__logo" href="../Pageaccueil.html">
+        <img class="menu__logo" src="../Images/Capture d’écran 2023-07-08 à 11.41.45.png" alt="Logo company">
+    </a>   
+    <nav class="menu__nav">
+        <a href="" class="nav__element nav__présentation" >Qui suis-je ?</a>
+        <a href="" class="nav__element nav__préstations">Mes prestations</a>
+        <a href="" class="nav__element nav__rendez-vous">Prendre rendez-vous</a>
+        <a href="" class="nav__element nav__portefolio">Mon portefolio</a>
+        <a href="" class="nav__element nav__contact">Contactez-moi</a>
+    </nav>
+    <div class="navbar-toggle">
+        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+    </div>
+    <ul class="nav__cachée">
+        <li><a href="" class="nav__cachée__element nav__cachée__présentation" >Qui suis-je ?</a></li>
+        <li><a href="" class="nav__cachée__element nav__cachée__préstations">Mes prestations</a></li>
+        <li><a href="" class="nav__cachée__element nav__cachée__rendez-vous">Prendre rendez-vous</a></li>
+        <li><a href="" class="nav__cachée__element nav__cachée__portefolio">Mon portefolio</a></li>
+        <li><a href="" class="nav__cachée__element nav__cachée__contact">Contactez-moi</a></li>
+    </ul>
+    </header>
+    <script>
+        const navbartoggle = document.querySelector('.navbar-toggle')
+        const navbartoggleIcon = document.querySelector('.navbar-toggle i')
+        const navcachée = document.querySelector('.nav__cachée')
+
+        navbartoggle.onclick = function () {
+            navcachée.classList.toggle('open')
+        }
+    </script>
+    
+    <main class="main">
+    <section class="Introduction">
+        <h1 class="Introduction__titre">Contact</h1>
+        <p class="Introduction__text">J'aime être proche de mes clients et pouvoir leur 
+            apporter une solution lorsqu'ils en ont besoin. N'hésitez pas à poser une question
+            ou à faire un commentaire. Je prendrais le temps de répondre en dehors de ma 
+            tournée.
+        </p>
+    </section>
+   
+    <form class="Formulaire" method="post">
+            <label for="name">
+                Votre nom
+                <input type="text" name="name" placeholder="Votre nom">
+            </label>
+            <label for="Firstname">
+                Votre prénom
+                <input type="text" name="Firstname" placeholder="Votre prénom">
+            </label>
+            <label for="Address">
+                VOtre adresse complète
+                <input type="text" name="address" placeholder="N°, rue, code postal et ville">
+            </label>
+            <label for="Phone">
+                Votre numéro de téléphone
+                <input type="text" name="Phone" placeholder="06XXXXXXXX">
+            </label>
+            <label for="email">
+                Votre email
+                <input type="email" name="email" placeholder="Votre email">
+            </label>
+
+        <label for="Demand">
+            <select name="Demand" id="Demand">
+                <option value="Quote">Demande de devis</option>
+                <option value="Produit">Information produit</option>
+                <Option value="Reclamation">Reclamation</Option>
+                <Option value="Other">Autre question</Option>
+            </select>
+        </label>
+        <label for="Message">
+            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+        </label>
+
+
+    </form>
+
+
+    </main>
+    </body>
+</html>
