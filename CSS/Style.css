@@ -215,6 +215,7 @@ img {
 
 .prestation__titre {
     font-weight: 700;
+    height: 2rem;
     margin: 2rem;
     text-align: center;
 }
@@ -305,7 +306,7 @@ button:hover {
 .comment__titre {
     font-size: x-large;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     margin-top: 10px;
 }
 .comment__soustitre {
