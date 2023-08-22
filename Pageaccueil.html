@@ -34,15 +34,7 @@
         <li><a href="./Pages/Contact.html" class="nav__cachée__element nav__cachée__contact">Contactez-moi</a></li>
     </ul>
     </header>
-    <script>
-        const navbartoggle = document.querySelector('.navbar-toggle')
-        const navbartoggleIcon = document.querySelector('.navbar-toggle i')
-        const navcachée = document.querySelector('.nav__cachée')
-
-        navbartoggle.onclick = function () {
-            navcachée.classList.toggle('open')
-        }
-    </script>
+   
 
     <main class="articles">
         <section class="articles__présentation">
@@ -54,6 +46,54 @@
                 nesciunt! Architecto, sit! Officiis unde, ipsa quo quaerat optio nemo perspiciatis 
                 accusamus natus corrupti iure dignissimos obcaecati qui.</p>
                 <a href="./Pages/Contact.html" class="articles__plus plusinfo">Pour en savoir plus</a>
+            </div>
+        </section>
+        <section class="prestations">
+            <div class="prestation_block">
+                <h2 class="prestation__titre">Femme : Shampoing, Coupe, Coiffage</h2>
+                <img class="prestation__img" src="./Images/coupe.jpeg" alt="coupe femme">
+                <p class="prestation__price">35€</p>
+                <div class="prestation__button">
+                    <button class="know-more">En savoir plus</button>
+                    <button class="book">Réserver</button>
+                </div>
+            </div>
+            <div class="prestation_block">
+                <h2 class="prestation__titre">Shampoing, Brushing</h2>
+                <img class="prestation__img" src="./Images/coiffure.jpeg" alt="coiffure">
+                <p class="prestation__price">25€</p>
+                <div class="prestation__button">
+                    <button class="know-more">En savoir plus</button>
+                    <button class="book">Réserver</button>
+                </div>
+            </div>
+            <div class="prestation_block">
+                <h2 class="prestation__titre">Coloration cheveux long</h2>
+                <img class="prestation__img" src="./Images/colloration.jpeg" alt="colloration cheveux long">
+                <p class="prestation__price">60€</p>
+                <div class="prestation__button">
+                    <button class="know-more">En savoir plus</button>
+                    <button class="book">Réserver</button>
+                </div>
+            </div>
+            <div class="prestation_block">
+                <h2 class="prestation__titre">Homme : Shampoing, Coupe, Coiffage</h2>
+                <img class="prestation__img" src="./Images/Dégradé+homme+-+5+coupes+de+cheveux+tendance+à+connaître.jpeg" alt="COupe homme">
+                <p class="prestation__price">30€</p>
+                <div class="prestation__button">
+                    <button class="know-more">En savoir plus</button>
+                    <button class="book">Réserver</button>
+                </div>
+            </div>
+        </section>
+        <section class="articles__rdv">
+            <div class="rdv">
+                <h1 class="rdv__titre">Réserver en quelques clics</h1>
+                <h2 class="rdv__soustitre">Entrez votre code postal</h2>
+                <label for="post_code" id="postcode">
+                    <input type="number" placeholder="5 chiffres" maxlength="5">
+                    <button class="postcode_button" type="submit">OK</button>
+                </label>
             </div>
         </section>
         <section class="articles__présentation">
@@ -78,5 +118,6 @@
             </li>
         </ul>
     </footer>
+    <script src="./JS/Hidden_nav.js"></script>
 </body>
 </html>

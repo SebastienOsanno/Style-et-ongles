@@ -32,6 +32,7 @@ img {
 .menu__nav {
     display: flex;
     font-size: 1.3rem;
+    height: 5rem;
     justify-content: center;
     width: 84%;
 }
@@ -42,9 +43,14 @@ img {
     display: flex;
     justify-content: center;
     margin: 0px 19px;
-    padding: 10px 0px;
+    padding: 10px 9px;
     text-align: center;
     text-decoration: none;
+}
+
+.nav__element:hover {
+    background-color: black;
+    color: white;
 }
 
 .nav__rendez-vous {
@@ -132,53 +138,143 @@ img {
 
 .articles__présentation {
     display: flex;
+    margin-bottom: 100px;
     position: relative;
 }
 
 .photoowner {
-    border-radius: 50%;
-    max-width: 200px;
-    max-height: 200px;
+    left: -200px;
+    max-width: 233px;
+    max-height: 231px;
     position: absolute;
-    top: -68px;
-    left: -147px;
+    top: -22px;
 }
 
 .articles__body {
     background-color: black;
-    border-radius: 10px  0px 0px 10px;
+    border-radius: 10px 0px 0px 10px;
     color: white;
-    padding: 10px;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    max-width: 700px;
     display: flex;
     flex-direction: column;
-    margin-left: 220px;
+    height: 400px;
+    margin-bottom: 100px;
+    margin-left: 25%;
+    padding: 44px;
+    position: relative;
+    right: 0;
+    top: 80px;
+    width: 75%;
 }
 
 .présentation__titre {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 10px;
-    margin-top: 50px;
+    margin-bottom: 40px;
+    margin-top: 15px;
 }
 
 .présentation__soustitre {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
 }
 
 .présentation__text {
-    margin-bottom: 10px;
+    margin-bottom: 110px;
 }
 
 .articles__plus {
     color: white;
     text-decoration: none;
+    width: 160px
 }
+
+.articles__plus:hover {
+    background-color: #DAA520;
+    color: black;
+    text-decoration: none;
+}
+
+
+/*** Main__Prestations ***/
+.prestations {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.prestation_block {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 356px;
+    box-shadow: 9px 0px 5px #DCDCDC;
+    margin: 0px 16px;
+}
+
+.prestation__titre {
+    font-weight: 700;
+    margin: 2rem;
+    text-align: center;
+}
+
+.prestation__price {
+    margin: 1.2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    height: 2rem;
+    margin: 0.3rem;
+    text-transform: uppercase;
+    width: 135px;
+}
+
+button:hover {
+    background-color: #DAA520;
+    color: black;
+}
+
+
+.prestation__img {
+    width: 53%;
+    height: 40%;
+}
+
+/*** Main__Réservation ***/
+.rdv {
+    align-items: center;
+    background-color: black ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100vw;
+}
+
+.rdv__titre {
+    font-size: x-large;
+    font-weight: 700;
+    margin: 30px;
+}
+
+.rdv__soustitre {
+    margin: 20px;
+}
+
+.postcode_button {
+    background-color: #DAA520;
+}
+
+#postcode {
+
+}
+
 
 /* FOOTER */
 .footer {
