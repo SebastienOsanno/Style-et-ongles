@@ -6,6 +6,7 @@ body {
     font-size: 62.5%*16px;
     font-family: "Montserrat", serif;
     line-height: none;
+    margin: 0px;
 }
 
 img {
@@ -132,7 +133,7 @@ img {
 /* MAIN */
 
 .articles {
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 .articles__présentation {
@@ -142,9 +143,9 @@ img {
 }
 
 .photoowner {
-    left: -200px;
-    max-width: 233px;
-    max-height: 231px;
+    left: -222px;
+    max-width: 261px;
+    max-height: 256px;
     position: absolute;
     top: -22px;
 }
@@ -351,6 +352,7 @@ button:hover {
 
 .basdepage {
     display: flex;
+    list-style-type: none;
 }
 
 .basdepage li{

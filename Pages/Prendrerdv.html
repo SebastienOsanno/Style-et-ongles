@@ -6,7 +6,7 @@
     <title>Style et ongles</title>
     <link rel="stylesheet" href="./CSS/reset.css">
     <link rel="stylesheet" href="../CSS/Style.css">
-    <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="../CSS/rdv.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -35,55 +35,23 @@
         <li><a href="../Pages/Contact.html" class="nav__cachée__element nav__cachée__contact">Contactez-moi</a></li>
     </ul>
     </header>
-    
-    <main class="main">
-    <section class="Introduction">
-        <h1 class="Introduction__titre">Contact</h1>
-        <p class="Introduction__text">J'aime être proche de mes clients et pouvoir leur 
-            apporter une solution lorsqu'ils en ont besoin. N'hésitez pas à poser une question
-            ou à faire un commentaire. Je prendrais le temps de répondre en dehors de ma 
-            tournée.
-        </p>
-    </section>
-   
-    <form class="Formulaire" method="post">
-            <label for="name">
-                Votre nom
-                <input type="text" name="name" placeholder="Votre nom">
-            </label>
-            <label for="Firstname">
-                Votre prénom
-                <input type="text" name="Firstname" placeholder="Votre prénom">
-            </label>
-            <label for="Address">
-                VOtre adresse complète
-                <input type="text" name="address" placeholder="N°, rue, code postal et ville">
-            </label>
-            <label for="Phone">
-                Votre numéro de téléphone
-                <input type="text" name="Phone" placeholder="06XXXXXXXX">
-            </label>
-            <label for="email">
-                Votre email
-                <input type="email" name="email" placeholder="Votre email">
-            </label>
-
-        <label for="Demand">
-            <select name="Demand" id="Demand">
-                <option value="Quote">Demande de devis</option>
-                <option value="Produit">Information produit</option>
-                <Option value="Reclamation">Reclamation</Option>
-                <Option value="Other">Autre question</Option>
-            </select>
-        </label>
-        <label for="Message">
-            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
-        </label>
-
-
-    </form>
-
+    <main class="main rdv__page">
+        <h1 class="rdv__title">Choisissez votre prestation puis selectionnez votre créneau.</h1>
+        <div class="calendar">
+            <iframe class="interactive__calendar" style = "border:0; height:600px; width:100%;" src="https://fr.resaclick.net/features/pro/proPublic/iframe/agenda.php?v=7726_zGYx5njZW8ma9NcHwrMi&bgColor=white"></iframe>
+        </div>
     <script src="../JS/Hidden_nav.js"></script>
-    </main>
-    </body>
+</main>
+<footer class="footer">
+    <ul class="basdepage">
+        <li>
+            <a href="">Mentions légales</a>
+        </li>
+        <li>
+            <a href="../Pages/Contact.html">Contact</a>
+        </li>
+    </ul>
+</footer>
+<script src="../JS/Hidden_nav.js"></script>
+</body>
 </html>
