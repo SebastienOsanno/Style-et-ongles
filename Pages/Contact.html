@@ -20,7 +20,7 @@
     <nav class="menu__nav">
         <a href="../Pages/Quisuisje.html" class="nav__element nav__présentation" >Qui suis-je ?</a>
         <a href="../Pages/Mesprestations.html" class="nav__element nav__préstations">Mes prestations</a>
-        <a href="../Pages/Prendrerdv.html" class="nav__element nav__rendez-vous">Prendre rendez-vous</a>
+        <a href="../Pages/Prendrerdv.html" class="nav__element nav__rendez-vous"><i class="fa-solid fa-calendar-day"></i>Prendre rendez-vous</a>
         <a href="../Pages/Monportefolio.html" class="nav__element nav__portefolio">Mon portefolio</a>
         <a href="../Pages/Contact.html" class="nav__element nav__contact">Contactez-moi</a>
     </nav>
@@ -36,54 +36,168 @@
     </ul>
     </header>
     
-    <main class="main">
-    <section class="Introduction">
-        <h1 class="Introduction__titre">Contact</h1>
-        <p class="Introduction__text">J'aime être proche de mes clients et pouvoir leur 
-            apporter une solution lorsqu'ils en ont besoin. N'hésitez pas à poser une question
-            ou à faire un commentaire. Je prendrais le temps de répondre en dehors de ma 
-            tournée.
-        </p>
-    </section>
-   
-    <form class="Formulaire" method="post">
-            <label for="name">
-                Votre nom
-                <input type="text" name="name" placeholder="Votre nom">
-            </label>
-            <label for="Firstname">
-                Votre prénom
-                <input type="text" name="Firstname" placeholder="Votre prénom">
-            </label>
-            <label for="Address">
-                VOtre adresse complète
-                <input type="text" name="address" placeholder="N°, rue, code postal et ville">
-            </label>
-            <label for="Phone">
-                Votre numéro de téléphone
-                <input type="text" name="Phone" placeholder="06XXXXXXXX">
-            </label>
-            <label for="email">
-                Votre email
-                <input type="email" name="email" placeholder="Votre email">
-            </label>
-
-        <label for="Demand">
-            <select name="Demand" id="Demand">
-                <option value="Quote">Demande de devis</option>
-                <option value="Produit">Information produit</option>
-                <Option value="Reclamation">Reclamation</Option>
-                <Option value="Other">Autre question</Option>
-            </select>
-        </label>
-        <label for="Message">
-            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
-        </label>
-
-
-    </form>
-
-    <script src="../JS/Hidden_nav.js"></script>
-    </main>
+        <main class="main">
+            <section class="Introduction">
+                <h1 class="Introduction__titre">Contact</h1>
+                <p class="Introduction__text">
+                    Un avis, une question, une suggestion... 
+                    Je suis à votre écoute. 
+                    Choisissez la rubrique sur laquelle porte votre demande 
+                    et remplissez le formulaire associé. Merci d'indiquer 
+                    une adresse électronique valide qui nous permettra 
+                    de vous répondre dans les meilleurs délais.
+                    <br><br>Vous pouvez me contacter par tout moment :
+                    <br>Par téléphone au <strong>06.01.02.03.04</strong>
+                    <br>Ou par email à  <strong>stylesandongles@gmail.com</strong>
+                 </p>
+            </section>
+            <section class="form__section">
+                <h2 class="form__section__introduction">Précisez l'objet de votre demande</h2>
+                <section class="Formulaire" method="post">
+                    <label for="Demand">
+                        <select name="Demand" id="Demand__question">
+                            <option value="Empty"></option>
+                            <option value="Quote">Demande de devis</option>
+                            <option value="Produit">Information produit</option>
+                            <Option value="Reclamation">Reclamation</Option>
+                            <Option value="Fidélité">Carte fidélité</Option>
+                            <Option value="Other">Autres questions</Option>
+                        </select>
+                    </label> 
+                    <form class="quote quote_prestation question" action="#" method="POST">
+                        <select name="Prestation" id="quote__Prestation">
+                            <option value="Empty"></option>
+                            <option value="Mèches">Chignons / Coiffures évènementielles femme</option>
+                            <option value="Produit">Chignons / Coiffures évènementielles enfant</option>
+                        </select>
+                        <p id="quote__Prestation">Ajoutez une ou plusieurs photos de vous</p>
+                        <input type="file" id="quote__Prestation">
+                        <div class="form__lign">
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Nom</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Prénom</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                        </div>
+                        <div class="form__lign">
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Adresse complète</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                        </div>
+                        <div class="form__lign">
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Email</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Numéro de téléphone</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                        </div>
+                        <label for="Message">
+                            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                        </label>
+                        <button type="submit" id="quote__Prestation">Valider demande</button>
+                    </form>
+                    <form class="info__product question" action="#" method="POST">
+                        <p>
+                        L'ensemble des produits utilisés proviennent de fournisseurs de qualité, 
+                        choisis minutieusement. J'ai fait le choix de prendre uniquement des produits
+                        d'origine europèenne, japonnaise et coréenne pour ne travailler qu'avec
+                        des produits supérieurs. Les marques utilisées sont L'Oréal Professionnel
+                        Wella Professionnel, Schwarzkopf Professionnel, Fauvert Professionnel,
+                        Farmavita ou autres. 
+                        </p>
+                        <label for="Message" class="other_question"> Avez-vous d'autres questions ? </label>
+                        <textarea name="Message" id="Message" class="message__product" cols="30" rows="10"></textarea>
+                        <button type="submit" id="quote__Prestation">Valider demande</button>
+                    </form>
+                    <form class="reclamation question" action="#" method="POST">
+                        <h3> Si vous avez eu un soucis, n'hésitez pas à remplir le formulaire ci-dessous, je vous recontacterais.</h3>
+                        <div class="form__lign">
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Nom</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Prénom</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                        </div>
+                        <div class="form__lign">
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Adresse complète</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                        </div>
+                        <div class="form__lign">
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Email</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Numéro de téléphone</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                        </div>
+                        <label for="Message"> </label>
+                        <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                        <button type="submit" id="quote__Prestation">Valider demande</button>
+                    </form>
+                    <form class="fidelity question" action="#" method="POST">
+                        <h3> Remplissez les informations ci-dessous afin d'intégrer le programme de fidélité.</h3>
+                        <div class="form__lign">
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Nom</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Prénom</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                        </div>
+                        <div class="form__lign">
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Adresse complète</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                        </div>
+                        <div class="form__lign">
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Email</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                            <div class="name__div">
+                                <label for="name" id="name" class="name__label">Numéro de téléphone</label>
+                                <input type="text" id="name" class="name__input">
+                            </div>
+                        </div>
+                        <button type="submit" id="quote__Prestation">Valider demande</button>
+                    </form>
+                    <form class="other question" action="#" method="POST">
+                        <label for="Message"> Pour tout autre demande, vous pouvez m'envoyer un message ci-dessous.
+                            <textarea name="Message" id="Message" cols="30" rows="10"></textarea>
+                        </label>
+                        <button type="submit" id="quote__Prestation">Valider demande</button>
+                    </form>
+                </section>
+            </section>
+        </main>
+        <footer class="footer">
+            <ul class="basdepage">
+                <li>
+                    <a href="">Mentions légales</a>
+                </li>
+                <li>
+                    <a href="./Pages/Contact.html">Contact</a>
+                </li>
+            </ul>
+        </footer>
+        <script src="../JS/Hidden_nav.js"></script>
+        <script src="../JS/contact.js"></script>
     </body>
 </html>

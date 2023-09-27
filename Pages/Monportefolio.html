@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Style et ongles</title>
-    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/Style.css">
+    <link rel="stylesheet" href="../CSS/Portefolio.css">
     <!--Téléchargement de mes fronts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c14c2df93d.js" crossorigin="anonymous"></script>
-    <!--Téléchargement de Slick pour le carrousel-->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-				
 </head>
 <body>
     <header class="menu">
     <a class="menu__logo" href="../Pageaccueil.html">
-        <img class="menu__logo" src="../Images/Capture d’écran 2023-07-08 à 11.41.45.png" alt="Logo company">
+        <img class="menu__logo" src="../Images/Capture d’écran 2023-07-08 à 11.41.45.png" alt="Logo company">
     </a>   
     <nav class="menu__nav">
         <a href="../Pages/Quisuisje.html" class="nav__element nav__présentation" >Qui suis-je ?</a>
         <a href="../Pages/Mesprestations.html" class="nav__element nav__préstations">Mes prestations</a>
-        <a href="../Pages/Prendrerdv.html" class="nav__element nav__rendez-vous">Prendre rendez-vous</a>
+        <a href="../Pages/Prendrerdv.html" class="nav__element nav__rendez-vous"><i class="fa-solid fa-calendar-day"></i>Prendre rendez-vous</a>
         <a href="../Pages/Monportefolio.html" class="nav__element nav__portefolio">Mon portefolio</a>
         <a href="../Pages/Contact.html" class="nav__element nav__contact">Contactez-moi</a>
     </nav>
@@ -39,17 +37,21 @@
     </ul>
     </header>
     <main class="main">
-        <div id="carrousel">
+        <div class="carousel carousel1">
             <article>
-              <img src="https://fakeimg.pl/600x400">
+              <img src="../Images/portefolio image/beaux-cheveux-traites-keratine_23-2149332492.avif">
             </article>
             <article>
-              <img src="https://fakeimg.pl/600x450">
+              <img src="../Images/portefolio image/bel-homme-chemise-blanche-posant-mec-attrayant-coiffure-mode-homme-confiant-barbe-courte-garcon-adulte-aux-cheveux-bruns-portrait-gros-plan_186202-8544.avif">
             </article>
             <article>
-              <img src="https://fakeimg.pl/600x500">
+              <img src="../Images/portefolio image/belle-coiffure-jeune-femme-apres-avoir-teint-cheveux-fait-reflets-dans-salon-coiffure_397897-728.avif">
             </article>
-          </div>
+        </div>
+        <div class="icones">
+            <img class="change_picture icone_last" src="../Images/Icones/bouton-retour.png" alt="Last picture">
+            <img class="change_picture icone_next" src="../Images/Icones/suivant.png" alt="Next picture">
+        </div>
     </main>
     <footer class="footer">
         <ul class="basdepage">
@@ -62,7 +64,6 @@
         </ul>
     </footer>
     <script src="../JS/Hidden_nav.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../JS/carrousel.js"></script>
 </body>
 </html>

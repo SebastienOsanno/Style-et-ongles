@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.section__prestation__femmes {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+
+.section__title {
+    color: #DAA520;
+    border-bottom: 4px solid #DAA520;
+    font-size: 45px;
+    font-family: Big Caslon;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    text-align: center;
+}
