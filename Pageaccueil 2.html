@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style et ongles</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c14c2df93d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="menu">   
+        <a class="menu__logo" href="./Pageaccueil.html">
+            <img class="menu__logo" src="./Images/Capture d’écran 2023-07-08 à 11.41.45.png" alt="Logo company">
+        </a>  
+    <nav class="menu__nav">
+        <a href="./Pages/Quisuisje.html" class="nav__element nav__présentation" >Qui suis-je ?</a>
+        <a href="./Pages/Mesprestations.html" class="nav__element nav__préstations">Mes prestations</a>
+        <a href="./Pages/Prendrerdv.html" class="nav__element nav__rendez-vous"><i class="fa-solid fa-calendar-day"></i>Prendre rendez-vous</a>
+        <a href="./Pages/Monportefolio.html" class="nav__element nav__portefolio">Mon portefolio</a>
+        <a href="./Pages/Contact.html" class="nav__element nav__contact">Contactez-moi</a>
+    </nav>
+    <div class="navbar-toggle">
+        <i class="fa-solid fa-bars" style="color: #000000;"></i>
+    </div>
+    <ul class="nav__cachée">
+        <li><a href="./Pages/Quisuisje.html" class="nav__cachée__element nav__cachée__présentation" >Qui suis-je ?</a></li>
+        <li><a href="./Pages/Mesprestations.html" class="nav__cachée__element nav__cachée__préstations">Mes prestations</a></li>
+        <li><a href="./Pages/Prendrerdv.html" class="nav__cachée__element nav__cachée__rendez-vous">Prendre rendez-vous</a></li>
+        <li><a href="./Pages/Monportefolio.html" class="nav__cachée__element nav__cachée__portefolio">Mon portefolio</a></li>
+        <li><a href="./Pages/Contact.html" class="nav__cachée__element nav__cachée__contact">Contactez-moi</a></li>
+    </ul>
+    </header>
+   
+
+    <main class="articles">
+        <section class="articles__présentation">
+            <div class="articles__body">
+                <img class="photoowner" src="./Images/photo coiffeuse.jpeg" alt="Photo owner">
+                <h1 class="présentation__titre">Je me présente...</h1>
+                <h2 class="présentation__soustitre">Moi, c'est Eliane Osanno, 30 ans de coiffure au bout de mes doigts.</h2>
+                <p class="présentation__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod saepe dignissimos error
+                nesciunt! Architecto, sit! Officiis unde, ipsa quo quaerat optio nemo perspiciatis 
+                accusamus natus corrupti iure dignissimos obcaecati qui.</p>
+                <a href="./Pages/Quisuisje.html" class="articles__plus plusinfo">Pour en savoir plus</a>
+            </div>
+        </section>
+        <section class="div__prestation">
+            <h1 class="div__prestation__titre">Les best-sellers</h1>
+            <div class="prestations">
+                <div class="prestation_block">
+                <h2 class="prestation__titre">Femme : Shampoing, Coupe, Coiffage</h2>
+                <img class="prestation__img" src="./Images/Prestations/coupe.jpeg" alt="coupe femme">
+                <p class="prestation__price">35€</p>
+                    <div class="prestation__button">
+                        <button class="know-more"><a href="./Pages/Prestation_femmes.html">En savoir plus</a></button>
+                        <button class="book"><a href="./Pages/Prendrerdv.html">Réserver</a></button>
+                    </div>
+                </div>
+                <div class="prestation_block">
+                    <h2 class="prestation__titre">Shampoing, Brushing</h2>
+                    <img class="prestation__img" src="./Images/Prestations/coiffure.jpeg" alt="coiffure">
+                    <p class="prestation__price">25€</p>
+                    <div class="prestation__button">
+                        <button class="know-more"><a href="./Pages/Prestation_femmes.html">En savoir plus</a></button>
+                        <button class="book"><a href="./Pages/Prendrerdv.html">Réserver</a></button>
+                    </div>
+                </div>
+                <div class="prestation_block">
+                    <h2 class="prestation__titre">Coloration cheveux long</h2>
+                    <img class="prestation__img" src="./Images/Prestations/colloration.jpeg" alt="colloration cheveux long">
+                    <p class="prestation__price">60€</p>
+                    <div class="prestation__button">
+                        <button class="know-more"><a href="./Pages/Prestation_femmes.html">En savoir plus</a></button>
+                        <button class="book"><a href="./Pages/Prendrerdv.html">Réserver</a></button>
+                    </div>
+                </div>
+                <div class="prestation_block">
+                    <h2 class="prestation__titre">Homme : Shampoing, Coupe, Coiffage</h2>
+                    <img class="prestation__img" src="./Images/Prestations/coupe_homme.jpeg" alt="COupe homme">
+                    <p class="prestation__price">30€</p>
+                    <div class="prestation__button">
+                        <button class="know-more"><a href="./Pages/Prestation_hommes.html">En savoir plus</a></button>
+                        <button class="book"><a href="./Pages/Prendrerdv.html">Réserver</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="articles__rdv">
+            <div class="rdv">
+                <h1 class="rdv__titre">Réservez en quelques clics</h1>
+                <h2 class="rdv__soustitre">Entrez votre code postal</h2>
+                <label for="post_code" id="postcode">
+                    <input class="postcode" type="text" placeholder="5 chiffres" maxlength="5">
+                    <button class="postcode_button" type="submit">OK</button>
+                </label>
+            </div>
+        </section>
+        <section class="articles__comment">
+            <div class="comment">
+                <h1 class="comment__titre">Ils m'ont fait confiance !</h1>
+                <h2 class="comment__soustitre">Après chaque prestation, j'envoie un questionnaire de satisfaction afin d'avoir des retours et de toujours chercher à m'améliorer.</h2>
+                <div class="comment__section">
+                    <div class="comment__block block1">
+                        <h3 class="comment__author">Beatrice Thomas</h3>
+                        <div class="comment__star">
+                            <img class="comment__img" src="./Images/5 stars.png" alt="5 stars">
+                            <p class="comment__note">5/5</p>
+                        </div>
+                        <p class="comment__paragraphe">"Coupe et coiffure de grandes qualitées avec une grande sympathie"</p>
+                    </div>
+                    <div class="comment__block block2">
+                        <h3 class="comment__author">Jean Bernard</h3>
+                        <div class="comment__star">
+                            <img class="comment__img" src="./Images/5 stars.png" alt="5 stars">
+                            <p class="comment__note">5/5</p>
+                        </div>
+                        <p class="comment__paragraphe">"Je suis très satisfait par la coupe et le rasage que j'ai reçu. Tout ça avec une grande rapidité"</p>
+                    </div>
+                    <div class="comment__block block3">
+                        <h3 class="comment__author">Philippe Nguyen</h3>
+                        <div class="comment__star">
+                            <img class="comment__img" src="./Images/5 stars.png" alt="5 stars">
+                            <p class="comment__note">5/5</p>
+                        </div>
+                        <p class="comment__paragraphe">"Rien à redire, l'efficacité parfaite."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <ul class="basdepage">
+            <li>
+                <a href="">Mentions légales</a>
+            </li>
+            <li>
+                <a href="./Pages/Contact.html">Contact</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./JS/Hidden_nav.js"></script>
+</body>
+</html>
